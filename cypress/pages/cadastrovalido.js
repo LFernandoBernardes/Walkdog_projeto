@@ -13,7 +13,9 @@ class CadastroPage{
             atividadeCuidarField: "[alt='Cuidar']",
             atividadeAdestrarField: "[alt='Adestrar']",
             uploadDocumentoField: ".dropzone",
-            successring: ".swal2-success-ring"
+            successring: ".swal2-success-ring",
+            erroalertField: '.alert-error'
+            
 
           }
 
@@ -62,6 +64,38 @@ class CadastroPage{
         cy.get(this.selectorsList().successring).should('be.visible')
     }
 
+    ErroNenhumcampo(){
+        cy.get('.alert-error').should('be.visible')
+        cy.get(':nth-child(3) > :nth-child(1) > .alert-error').should('be.visible')
+        cy.get(':nth-child(2) > .alert-error').should('be.visible')
+        cy.get(':nth-child(4) > :nth-child(2) > :nth-child(1) > .alert-error').should('be.visible')
+        cy.get(':nth-child(4) > :nth-child(1) > .alert-error').should('be.visible')
+        cy.get('form > :nth-child(7)').should('be.visible')    
+    }
+
+    ErroNome(){
+        cy.get('.alert-error').should('be.visible') 
+    }
+
+    ErroEmail(){
+        cy.get(':nth-child(3) > :nth-child(1) > .alert-error').should('be.visible')
+    }
+
+    ErroCpf(){
+        cy.get(':nth-child(2) > .alert-error').should('be.visible')
+    }
+
+    ErroCep(){
+        cy.get(':nth-child(4) > :nth-child(2) > :nth-child(1) > .alert-error').should('be.visible')
+    }
+
+    ErroAddress(){
+        cy.get(':nth-child(4) > :nth-child(1) > .alert-error').should('be.visible')
+    }
+
+    ErroUploadfoto(){
+        cy.get('form > :nth-child(7)').should('be.visible') 
+    }
  
 
 }
