@@ -1,6 +1,10 @@
 import CadastroPage from "../pages/cadastrovalido"
 
+const Chance = require ('chance')
+
+const chance = new Chance()
 const cadastroPage = new CadastroPage()
+
 
 
 describe('Walkdog ', () => {
@@ -11,8 +15,12 @@ describe('Walkdog ', () => {
 
   })
 
-  it('Cadastro Válido Cuidar',()=>{
-    cadastroPage.CadastroPage()
+  it.only('Cadastro Válido Cuidar',()=>{
+    cadastroPage.Nome(chance.first())
+    cadastroPage.Email(chance.email())
+    cadastroPage.cpf('00638174631')
+    cadastroPage.cep(90620170)
+    cadastroPage.addressNumber(1101, 802)
     cadastroPage.AtividadeCuidar()
     cadastroPage.uploadDocumento() 
     cy.get('.button-register').click()
@@ -21,7 +29,11 @@ describe('Walkdog ', () => {
   })
 
   it('Cadastro Válido Adestrar',()=>{
-    cadastroPage.CadastroPage()
+    cadastroPage.Nome()
+    cadastroPage.Email()
+    cadastroPage.cpf()
+    cadastroPage.cep()
+    cadastroPage.addressNumber()
     cadastroPage.AtividadeAdestrar()
     cadastroPage.uploadDocumento() 
     cy.get('.button-register').click()
@@ -30,7 +42,11 @@ describe('Walkdog ', () => {
   })
 
   it('Cadastro Válido Cuidar + Adestrar',()=>{
-    cadastroPage.CadastroPage()
+    cadastroPage.Nome()
+    cadastroPage.Email()
+    cadastroPage.cpf()
+    cadastroPage.cep()
+    cadastroPage.addressNumber()
     cadastroPage.AtividadeCuidar()
     cadastroPage.AtividadeAdestrar()
     cadastroPage.uploadDocumento() 

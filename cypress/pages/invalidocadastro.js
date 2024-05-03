@@ -1,5 +1,4 @@
-
-class CadastroPage{
+class InvalidoPage{
 
     selectorsList (){
         const selectors ={
@@ -20,30 +19,30 @@ class CadastroPage{
         return selectors
     }
 
-    Nome(name){
-        cy.get(this.selectorsList().nomecompletoField).clear().type(name)
+    Nome(){
+        cy.get(this.selectorsList().nomecompletoField).clear().type('Luiz')
 
     }
 
-    Email(email){
-        cy.get(this.selectorsList().emailField).clear().type(email)
+    Email(){
+        cy.get(this.selectorsList().emailField).clear().type('email@test.com')
 
     }
 
-    cpf(cpf){
-        cy.get(this.selectorsList().cpfField).clear().type(cpf)
+    cpf(){
+        cy.get(this.selectorsList().cpfField).clear().type('00655896579')
 
     }
 
-    cep(cep){
-        cy.get(this.selectorsList().cepField).clear().type(cep)
+    cep(){
+        cy.get(this.selectorsList().cepField).clear().type(90620170)
         cy.get(this.selectorsList().buscarCepField).click()
 
     }
 
-    addressNumber(number, details){
-        cy.get(this.selectorsList().addressNumberField).clear().type(number)
-        cy.get(this.selectorsList().addressDetailsField).clear().type(details)
+    addressNumber(){
+        cy.get(this.selectorsList().addressNumberField).clear().type(1101)
+        cy.get(this.selectorsList().addressDetailsField).clear().type(901)
     }
 
     AtividadeCuidar(){
@@ -62,8 +61,6 @@ class CadastroPage{
         cy.get(this.selectorsList().successring).should('be.visible')
     }
 
- 
 
 }
-
-export default CadastroPage
+export default InvalidoPage
