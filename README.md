@@ -9,12 +9,8 @@ Depois de fazer os casos de testes e os testes manuais. Me desafiei a faze-los d
 
 * Site de estudo [Walkdog](https://walkdog.vercel.app/signup) 
 
-[![](https://walkdog.vercel.app/signup)]
 
-- Foto da página.
-
-
-### Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 Utilizei o Ecxel para criar os casos de testes. Os testes automatizados foram feito com Cypress baseado na liguangem JavaScrit.  
 
@@ -31,32 +27,44 @@ npm install
 > **NOTE: **
 >
 > It is necessary to have **node** installed
+> 
 
 
 ## Como rodar o projeto ✅
 
 O projeto é rodado em cypress tanto na versão Desktop quanto Mobile. 
 
-```bash
+
 #You open the Cypress UI for Desktop or Mobile
+```bash
 npx cypress open
-npx cy: open: mobile
-
-# Run the automation by command line for Desktop or Mobile
-npx cypress run
-npx test: mobile
-
 ``` 
+
+```bash
+npx cy: open: mobile
+``` 
+
+### Run the automation by command line for Desktop or Mobile
+
+```bash
+npx cypress run
+```
+
+```bash
+npx test: mobile
+```
+#### Dependências
+
 Foi usado a dependencia Chance para realizar testes com preenchimento randomico 
 
 ```bash
-#Dependencia
 npm install chance
 ``` 
 
 ## 📌  - Informações importantes sobre a aplicação 📌
 
 Não deixe de conferir a aplicação rodando no Action, foi feito o arquivo ci.yml para que se possa ver os testes sendo feitos automaticamente.
+
 
 
 ## ⚠️ Problemas enfrentados
@@ -67,13 +75,14 @@ Lembrando - sei que é só um site que ajuda nos estudos e não uma aplicação 
 
 Exemplo:
 
-### Campo Nome Completo:
+### Campo Nome Completo
 Não tinha valores aceitos: Quantidade minima, Caracteres Especiais, Campo preenchido com digitos.
 
 Neste campo aceitava tudo desde que não estivesse vázio o cadastro era realizado. 
 
 Por exemplo é possível realizar o cadastro com o nome '%'
 Isto pode ser considerado um erro no sistema pois precisamos de um informação completa.
+
 
 ### Campo Atividades Extras
 Foi possível fazer o cadastro com todas as possibilidades, não era um campo obrigatório a ser selecionado. 
@@ -82,6 +91,6 @@ O usuário poderia escolher uma ou ambas ou nenhuma atividade para trabalhar com
 
 Fiquei na dúvida se não marcar nenhuma seria aceito ou não. 
 
-### Agradecimento
+## Agradecimento
 
 Obrigado por chegar até aqui. Este é um dos primeiros projetos que fiz portanto estou aberto a críticas, sujestões. 😅
