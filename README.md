@@ -75,7 +75,7 @@ Lembrando - sei que é só um site que ajuda nos estudos e não uma aplicação 
 
 Exemplo:
 
-### Campo Nome Completo
+#### Campo Nome Completo:
 Não tinha valores aceitos: Quantidade minima, Caracteres Especiais, Campo preenchido com digitos.
 
 Neste campo aceitava tudo desde que não estivesse vázio o cadastro era realizado. 
@@ -84,7 +84,7 @@ Por exemplo é possível realizar o cadastro com o nome '%'
 Isto pode ser considerado um erro no sistema pois precisamos de um informação completa.
 
 
-### Campo Atividades Extras
+#### Campo Atividades Extras:
 Foi possível fazer o cadastro com todas as possibilidades, não era um campo obrigatório a ser selecionado. 
 
 O usuário poderia escolher uma ou ambas ou nenhuma atividade para trabalhar com os pets. 
