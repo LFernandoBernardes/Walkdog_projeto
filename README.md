@@ -63,7 +63,7 @@ npm install chance
 
 ## 📌  - Informações importantes sobre a aplicação 📌
 
-Não deixe de conferir a aplicação rodando no Action, foi feito o arquivo ci.yml para que se possa ver os testes sendo feitos automaticamente.
+Não deixe de conferir a aplicação rodando no Action, foi feito o arquivo Continuos Integrations ci.yml para que se possa ver os testes sendo feitos automaticamente.
 
 
 
